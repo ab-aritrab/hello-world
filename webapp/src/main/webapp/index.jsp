@@ -1,6 +1,5 @@
 <h1> Hello, Welcome to My WebSite...!!! </h1>
-<h1> going to test this code and deploy on success trigger </h1>
-<h2> DevOps CODE TEST Passed................. </h2>
+<h1> DOCKER IMAGES CREATED on success trigger </h1>
 <h3> THIS code is in the MAIN BRANCH .........</h3>
 
 <h1> Code : HELLO WORLD... </h1>
