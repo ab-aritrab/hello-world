@@ -15,4 +15,4 @@ sudo docker push $UID/$IMG_NAME:1.$BUILD_ID
 sudo docker push $UID/$IMG_NAME:latest
 
 docker rmi $IMG_NAME:1.$BUILD_ID $UID/$1:1.$BUILD_ID $UID/$1:latest
-docker rmi $(docker images -a -q)
+#docker rmi $(docker images -a -q)
