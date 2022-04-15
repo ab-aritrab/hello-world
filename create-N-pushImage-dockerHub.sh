@@ -6,13 +6,8 @@ UID=$2
 sudo cp webapp/target/*.war /opt/docker
 sudo cp Dockerfile /opt/docker
 cd /opt/docker
-sudo docker build -t $IMG_NAME:1.$BUILD_ID .
-
-sudo docker tag $IMG_NAME:1.$BUILD_ID $UID/$IMG_NAME:1.$BUILD_ID
-sudo docker tag $IMG_NAME:1.$BUILD_ID $UID/$IMG_NAME:latest
-
-sudo docker push $UID/$IMG_NAME:1.$BUILD_ID
-sudo docker push $UID/$IMG_NAME:latest
-
-sudo docker rmi $IMG_NAME:1.$BUILD_ID $UID/$1:1.$BUILD_ID $UID/$1:latest
+sudo docker build -t $IMG_NAME .
+sudo docker tag $IMG_NAME  $UID/$IMG_NAME 
+sudo docker push $UID/$IMG_NAME 
+sudo docker rmi $IMG_NAME  $UID/$IMG_NAME
 #docker rmi $(docker images -a -q)
