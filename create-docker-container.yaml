@@ -1,5 +1,5 @@
-## COMMAND syntax - ansible-playbook -i hosts -e "UID=****" -e "DOCKER_PASS=******" -e -e "EMAIL=*****" "IMG_NAME=******" create-docker-container.yaml
-## EXAMPLE - ansible-playbook -i hosts -e "UID=abaritrab" -e "DOCKER_PASS=A***@85" -e "EMAIL=ab.aritrab@gmail.com" -e "IMG_NAME=hello_world" create-docker-container.yaml
+## COMMAND syntax - ansible-playbook -i <PATH>/hosts -e "UID=****" -e "DOCKER_PASS=******" -e -e "EMAIL=*****" "IMG_NAME=******" create-docker-container.yaml
+## EXAMPLE - ansible-playbook -i <PATH>/hosts -e "UID=abaritrab" -e "DOCKER_PASS=A***@85" -e "EMAIL=ab.aritrab@gmail.com" -e "IMG_NAME=hello_world" create-docker-container.yaml
 ---
  - hosts: webserver
    become: true

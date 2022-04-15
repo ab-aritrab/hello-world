@@ -3,9 +3,9 @@
 #!bin/bash
 IMG_NAME=$1
 UID=$2
-sudo cp webapp/target/*.war /opt/docker
-sudo cp Dockerfile /opt/docker
-cd /opt/docker
+#sudo cp webapp/target/*.war /opt/docker
+#sudo cp Dockerfile /opt/docker
+#cd /opt/docker
 sudo docker build -t $IMG_NAME:1.$BUILD_ID .
 
 sudo docker tag $IMG_NAME:1.$BUILD_ID $UID/$IMG_NAME:1.$BUILD_ID
